@@ -1,0 +1,49 @@
+h1 {
+    front: size 5rem;
+    front-family: sant-serif; 
+
+}
+
+
+.valokuva {
+    height: 60vh;
+    width: 140vh;
+    margin-left: auto; 
+    margin-right: auto;
+    display:block
+}
+
+/* Tyyli.css */
+
+/* Taustaväri */
+body {
+    background-color: #E6F5E6; /* Vaalean vihreä */
+}
+
+/* Tekstin väri */
+p, h1, h2, h3 {
+    color: #333; /* Tummanharmaa */
+}
+
+/* Linkkien väri */
+a {
+    color: #008000; /* Tummanvihreä */
+    text-decoration: none; /* Poista alleviivaukset */
+}
+
+/* Hover-efekti linkeille */
+a:hover {
+    color: #006400; /* Tumma vihreä */
+}
+
+.minä {
+    height: 50vh;
+    width: 50vh;
+    margin-left: auto
+    margin-right:auto;
+    display:block
+}
+
+h1 {
+  color: grey;
+}
