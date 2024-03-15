@@ -1,15 +1,19 @@
 h1 {
-    font-size: 2rem; /* Korjattu font size */
-    font-family: sans-serif; /* Oletin, että tarkoitit sans-serifia, korjattu kirjoitusvirhe */
+    font: size 5rem;
+    font-family: sant-serif; 
+
 }
+
 
 .valokuva {
     height: 60vh;
     width: 140vh;
-    margin-left: auto;
-    margin-right: auto; /* Lisätty puuttuva puolipiste */
-    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    display:block
 }
+
+/* Tyyli.css */
 
 /* Taustaväri */
 body {
@@ -35,7 +39,11 @@ a:hover {
 .minä {
     height: 50vh;
     width: 50vh;
-    margin-left: auto; /* Lisätty puuttuva puolipiste */
-    margin-right: auto;
-    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    display:block
+}
+
+h1 {
+  color: grey;
 }
