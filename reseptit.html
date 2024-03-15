@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /* Tyyliä voi lisätä tähän */
-        .minä {
-            max-width: 100%; /* Maksimileveys 100% näytön leveydestä */
-            height: auto; /* Automaattinen korkeus leveyssuhteessa */
-        }
         body {
             font-family: Arial, sans-serif;
         }
@@ -38,17 +34,34 @@
             text-decoration: none;
             color: #333;
         }
-        .content {
-            padding: 20px;
-        }
-        .footer {
-            background-color: #f9f9f9;
-            padding: 10px;
-            text-align: center;
-        }
-        .about-me-box {
+        .recipe-box {
             border: 1px solid #ccc;
             padding: 10px;
+            margin-bottom: 20px;
+            overflow: hidden; /* varmista, että laatikko mukautuu sisältöön */
+        }
+        .recipe-image {
+            float: left;
+            margin-right: 20px;
+        }
+        .recipe-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .recipe-details {
+            overflow: hidden; /* varmista, että laatikko mukautuu sisältöön */
+        }
+        .recipe-details h2 {
+            margin-top: 0;
+        }
+        .recipe-details p {
+            margin-top: 0;
+        }
+        .recipe-details ul,
+        .recipe-details ol {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -63,83 +76,47 @@
             </div>
         </div>
         <div class="content">
-            <h1>Reseptit</h1>
-            <table>
-                <tr>
-                    <td><img src="kuva2.png" alt="Omenapiirakka"></td>
-                    <td style="vertical-align: top; font-family: Arial, Helvetica, sans-serif;">Omenapiirakka</td>
-                    <td style="vertical-align: top; text-align: left ; font-family: Arial;">
-                        <pre>
-                            Raaka-aineet
-
-                            100 g    voita
-                            3/4 dl    sokeria (voi laittaa koko desinkin, jos haluaa makeampaa)
-                            1    kananmuna
-                            2,5 dl    vehnäjauhoa
-                            1 tl    leivinjauhetta
-                            Täyte:
-                            250 g    maitorahkaa (1 prk)
-                            0,5 dl    sokeria
-                            0,5 dl    kuohukermaa
-                            1    kananmuna
-                            1/2 sitruunan mehu
-                            1 tl    vaniljasokeria
-                            omenaa
-                            kanelia
-
-                            Ohje: 
-                            Ota voi ja munat lämpenemään pari tuntia ennen leipomista. 
-                            Vaahdota sokeri ja voi, lisää muna ja sitten leivinjauhe- 
-                            jauhoseos. Levitä voideltuun, korppujauhotettuun piirakkavuokaan. 
-
-                            Levitä omenasosetta ohut kerros pohjalle. 
-                            Sekoita täyteainekset ja levitä omenasoseen päälle. 
-                            Kuori omena, poista kara ja leikkaa ohuiksi siivuiksi,
-                            levitä siivut täytteen päälle lopuksi vielä ripaus kanelia
-                            ja paisto 175 asteessa alatasolla reilu puoli tuntia.
-                        </pre>
-                    </td>
-                </tr>
-            </table>
+            <div class="recipe-box">
+                <div class="recipe-image">
+                    <img src="kuva2.png" alt="Omenapiirakka">
+                </div>
+                <div class="recipe-details">
+                    <h2>Omenapiirakka</h2>
+                    <p><strong>Raaka-aineet:</strong></p>
+                    <ul>
+                        <li>100 g voita</li>
+                        <li>3/4 dl sokeria (voi laittaa koko desinkin, jos haluaa makeampaa)</li>
+                        <!-- Lisää raaka-aineet tarvittaessa -->
+                    </ul>
+                    <p><strong>Ohje:</strong></p>
+                    <ol>
+                        <li>Ota voi ja munat lämpenemään pari tuntia ennen leipomista.</li>
+                        <li>Vaahdota sokeri ja voi, lisää muna ja sitten leivinjauhe-jauhoseos.</li>
+                        <!-- Lisää ohjeet tarvittaessa -->
+                    </ol>
+                </div>
+            </div>
+            <div class="recipe-box">
+                <div class="recipe-image">
+                    <img src="kuva1.png" alt="Falafelpyörykät">
+                </div>
+                <div class="recipe-details">
+                    <h2>Falafelpyörykät</h2>
+                    <p><strong>Raaka-aineet:</strong></p>
+                    <ul>
+                        <li>2 kpl (à 290/175 g) kikherneitä</li>
+                        <li>1 kpl sipuli</li>
+                        <!-- Lisää raaka-aineet tarvittaessa -->
+                    </ul>
+                    <p><strong>Ohje:</strong></p>
+                    <ol>
+                        <li>Hienonna sipuli ja valkosipulinkynsi.</li>
+                        <li>Silppua korianteri.</li>
+                        <!-- Lisää ohjeet tarvittaessa -->
+                    </ol>
+                </div>
+            </div>
         </div>
-        <div class="content">
-            <table>
-                <tr>
-                    <td><img src="kuva1.png" alt="Falafelpyörykät"></td>
-                    <td style="vertical-align: top; font-family: Arial, Helvetica, sans-serif;">Falafelpyörykät</td>
-                    <td style="vertical-align: top; font-family: Arial, Helvetica, sans-serif;">
-                        <pre>
-                            Raaka-aineet
-                            2 kpl (à 290/175 g) kikherneitä
-                            1 kpl sipuli
-                            2 kpl valkosipulinkynttä
-                            1/2 kpl ruukkua korianteria
-                            1 rkl tahinia
-                            2 tl juustokuminaa
-                            (1/4 tl) rouhittua mustapippuria
-                            1 tl suolaa
-                            (3/4 dl) (kokojyvä)vehnäjauhoja
-                            1/2 l rypsi- tai auringonkukkaöljyä
-
-                            Ohje:
-                            Hienonna sipuli ja valkosipulinkynsi. Silppua korianteri.
-                            Yhdistä sauva- tai tehosekoittimen kulhossa kikherneet, sipuli,
-                            valkosipuli, mausteet ja jauhot.Lisää tahini ja soseuta karkeaksi
-                            tahnaksi.
-                            Siirrä taikina jääkaappiin tunniksi maustumaan.
-
-                            Pyörittele taikinasta käsin tiiviitä pyöryköitä. 
-                            Kuumenna öljy 180-asteiseksi.
-                            Uppopaista pyörykät kolmessa erässä kullanruskeiksi, 
-                            noin 5 minuuttia kerrallaan.
-                        </pre>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="footer">
-        &copy; 2024 Kotikokki
     </div>
 </body>
 </html>
