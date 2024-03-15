@@ -39,9 +39,10 @@
             padding: 10px;
             margin-bottom: 20px;
             overflow: hidden; /* varmista, että laatikko mukautuu sisältöön */
+            display: flex; /* Järjestää kuvan ja tiedot rinnakkain */
         }
         .recipe-image {
-            float: left;
+            flex: 0 0 auto; /* Estää kuvan venymisen */
             margin-right: 20px;
         }
         .recipe-image img {
@@ -49,7 +50,7 @@
             height: auto;
         }
         .recipe-details {
-            overflow: hidden; /* varmista, että laatikko mukautuu sisältöön */
+            flex: 1; /* Joustava tila tekstille */
         }
         .recipe-details h2 {
             margin-top: 0;
@@ -86,11 +87,12 @@
                     <ul>
                         <li>100 g voita</li>
                         <li>3/4 dl sokeria (voi laittaa koko desinkin, jos haluaa makeampaa)</li>
-                        <li>3/4 dl sokeria (voi laittaa koko desinkin, jos haluaa makeampaa)</li>
                         <li>1 kananmuna</li>
                         <li>2,5 dl vehnäjauhoa</li>
                         <li>1 tl leivinjauhetta</li>
-                        <p><strongäyte:</strong></p>
+                    </ul>
+                    <p><strong>Täyte:</strong></p>
+                    <ul>
                         <li>250 g maitorahkaa (1 prk)</li>
                         <li>0,5 dl sokeria</li>
                         <li>0,5 dl kuohukermaa</li>
@@ -99,13 +101,17 @@
                         <li>1 tl vaniljasokeria</li>
                         <li>omenaa</li>
                         <li>kanelia</li>
-                        <!-- Lisää raaka-aineet tarvittaessa -->
                     </ul>
                     <p><strong>Ohje:</strong></p>
                     <ol>
                         <li>Ota voi ja munat lämpenemään pari tuntia ennen leipomista.</li>
                         <li>Vaahdota sokeri ja voi, lisää muna ja sitten leivinjauhe-jauhoseos.</li>
-                        <!-- Lisää ohjeet tarvittaessa -->
+                        <li>Levitä voideltuun, korppujauhotettuun piirakkavuokaan.</li>
+                        <li>Levitä omenasosetta ohut kerros pohjalle.</li>
+                        <li>Sekoita täyteainekset ja levitä omenasoseen päälle.</li>
+                        <li>Kuori omena, poista kara ja leikkaa ohuiksi siivuiksi.</li>
+                        <li>Levitä siivut täytteen päälle lopuksi vielä ripaus kanelia.</li>
+                        <li>Paista 175 asteessa alatasolla reilu puoli tuntia.</li>
                     </ol>
                 </div>
             </div>
